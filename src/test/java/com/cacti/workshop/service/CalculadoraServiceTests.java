@@ -14,4 +14,12 @@ public class CalculadoraServiceTests {
 
         assertEquals("La suma de 1 y 2 debe ser 3", Integer.valueOf(3), service.sum(1, 2));
     }
+
+    @Test
+    public void test_mult() {
+        CalculadoraService service = new CalculadoraService();
+
+        assertEquals("La multiplicación de 3 x 2 debe ser 6", Integer.valueOf(5), service.mult(3, 2));
+    }
+
 }
