@@ -14,7 +14,7 @@ public class CalculadoraService {
     }
 
     public Integer subs(Integer ope1, Integer ope2) {
-        return  ope1 - ope2;
+        return  ope2 - ope1;
     }
 
     public Integer mult(Integer ope1, Integer ope2) {

@@ -19,6 +19,13 @@ public class CalculadoraServiceTests {
     public void test_mult() {
         CalculadoraService service = new CalculadoraService();
 
+        assertEquals("La resta de 2 con 1 debe ser 1", Integer.valueOf(1), service.subs(2, 1));
+    }
+
+    @Test
+    public void test_mult() {
+        CalculadoraService service = new CalculadoraService();
+
         assertEquals("La multiplicación de 3 x 2 debe ser 6", Integer.valueOf(6), service.mult(3, 2));
     }
 
