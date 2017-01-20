@@ -16,7 +16,10 @@ apply plugin: 'eclipse'
 apply plugin: 'spring-boot'
 //Medir la cobertura del código en la ejecución de las pruebas
 apply plugin: 'jacoco'
+
+//Plugins para análisis estático de código
 apply plugin: 'checkstyle'
+apply plugin: 'findbugs'
 
 jar {
 	baseName = 'dia4'
@@ -50,3 +53,11 @@ jacoco {
 
 //esto le indica a Gradle que realice el reporte de cobertura en las pruebas
 check.dependsOn jacocoTestReport
+
+
+tasks.withType(FindBugs) {
+	reports {
+		xml.enabled false
+		html.enabled true
+	}
+}
