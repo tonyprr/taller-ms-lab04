@@ -16,7 +16,7 @@ public class CalculadoraServiceTests {
     }
 
     @Test
-    public void test_mult() {
+    public void test_subs() {
         CalculadoraService service = new CalculadoraService();
 
         assertEquals("La resta de 2 con 1 debe ser 1", Integer.valueOf(1), service.subs(2, 1));
