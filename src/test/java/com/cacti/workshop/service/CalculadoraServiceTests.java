@@ -19,7 +19,7 @@ public class CalculadoraServiceTests {
     public void test_mult() {
         CalculadoraService service = new CalculadoraService();
 
-        assertEquals("La multiplicación de 3 x 2 debe ser 6", Integer.valueOf(5), service.mult(3, 2));
+        assertEquals("La multiplicación de 3 x 2 debe ser 6", Integer.valueOf(6), service.mult(3, 2));
     }
 
 }
